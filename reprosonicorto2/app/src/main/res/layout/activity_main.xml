@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- Toolbar -->
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            android:title="repromusica"
+            android:titleTextColor="#FFFFFF"/>
+
+        <!-- Reproductor -->
+        <TextView
+            android:id="@+id/txtNombreCancion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Canción: cancion.mp3"
+            android:textSize="20sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"/>
+
+        <Button
+            android:id="@+id/btnPlay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Play"/>
+
+        <Button
+            android:id="@+id/btnPause"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pausa"
+            android:layout_marginTop="10dp"/>
+
+        <SeekBar
+            android:id="@+id/seekBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/txtTiempoActual"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="00:00"
+                android:textSize="16sp"
+                android:layout_marginRight="20dp"/>
+
+            <TextView
+                android:id="@+id/txtTiempoTotal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="00:00"
+                android:textSize="16sp"/>
+        </LinearLayout>
+
+        <!-- BOTONES DE SONIDOS CORTOS -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Efectos de sonido:"
+            android:textSize="18sp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="10dp"/>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btnSonido1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sonido 1"
+                android:layout_marginTop="5dp"/>
+
+            <Button
+                android:id="@+id/btnSonido2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sonido 2"
+                android:layout_marginTop="5dp"/>
+
+            <Button
+                android:id="@+id/btnSonido3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sonido 3"
+                android:layout_marginTop="5dp"/>
+
+            <Button
+                android:id="@+id/btnSonido4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sonido 4"
+                android:layout_marginTop="5dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
